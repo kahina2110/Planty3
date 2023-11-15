@@ -6,6 +6,8 @@
 body {
     line-height: normal;
     font-family: 'Syne', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
   
 }
 
@@ -14,15 +16,14 @@ body {
 }
 
 nav {
-    background-color: #e4dad2;
     justify-content: space-between;
 }
 
 
 footer {
-    bottom: 0;
     width: 100%;
     font-family: 'Syne', sans-serif;
+    bottom: 0;
 }
     
 
@@ -34,15 +35,11 @@ footer {
     width: 100%;
 }
 
-h2.entry-title  a{
-    margin-top: 50px;
-    color:#3B8E46;
-    font-family: 'Syne', sans-serif;
-    font-weight: 900;
-    text-decoration: none;
-    font-size: 38px;
+h1.entry-title  {
+   display: none;
 
 }
+
 
 
 
@@ -55,26 +52,31 @@ footer a {
 }
 
 
+
+
+
 /*FORMAT TABLETTE ET BUREAU*/
 @media (min-width: 566px) {
-
+    
     nav {
         justify-content: space-between;
-        
         height: 80px;
         display: flex;
-     
+        
     }
-
- 
+    
+    
     img {
         width: 200px;
         margin-left: 30px;
         object-fit: contain;
     }
-
-
-
+    
+    .menu-navigation-container {
+        padding-top: 28px;
+        padding-left: 20px;
+    }
+    
     .navigation ul {
         list-style: none;
         margin: 30px;
@@ -86,6 +88,15 @@ footer a {
         
     }
     
+    h1 {
+        color:#3B8E46;
+        font-family: 'Syne', sans-serif;
+        font-weight: 900;
+        text-align: center;
+        text-decoration: none;
+        font-size: 38px;
+    
+    }
     .navigation a {
         padding: 10px;
         color: black;
@@ -99,10 +110,10 @@ footer a {
         background-color: #DC9F96;
         width: 100%;
         
+        padding: 28px;
     }
     
     #menu-item-10 li {
-        padding: 30px;
         color: white;
         background-color: #DC9F96;
 
@@ -140,7 +151,7 @@ footer a {
 
 
 
-
+/*TABLETTE ET MOBILE*/
 
 @media (max-width: 566px) {
 
@@ -201,6 +212,17 @@ footer a {
     #menu-item-10 li {
         color: white;
         background-color: #DC9F96;
+    }
+
+    h1 {
+        margin-top: 50px;
+        color:#3B8E46;
+        font-family: 'Syne', sans-serif;
+        font-weight: 900;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+    
     }
 
 
