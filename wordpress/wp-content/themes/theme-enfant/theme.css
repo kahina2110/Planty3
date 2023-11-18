@@ -6,17 +6,26 @@
 body {
     line-height: normal;
     font-family: 'Syne', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-  
+}
+
+#container {
+    background-color: #E2DAD4;
+    max-width: 100%;
+
 }
 
 #site-title {
     display: none;
 }
 
+.post-edit-link {
+    display: none;
+}
+
 nav {
     justify-content: space-between;
+    height: 80px;
+
 }
 
 
@@ -25,7 +34,10 @@ footer {
     font-family: 'Syne', sans-serif;
     bottom: 0;
 }
-    
+
+img.canette {
+    width: 1489px;
+}
 
 
 #footer {
@@ -35,9 +47,34 @@ footer {
     width: 100%;
 }
 
-h1.entry-title  {
-   display: none;
+p.presentation {
+    width: 500px;
+    text-align: center;
+    margin: 2em auto;
+}
 
+button {
+    width: 198px;
+}
+
+h1.entry-title {
+    display: none;
+}
+
+.presentation {
+    border-radius: 0px 0px 30px 0px;
+}
+
+h1.has-background {
+    padding: 0;
+    width: 300px;
+}
+h2.has-background {
+    padding: 0;
+}
+
+h4.has-background {
+    padding: 2;
 }
 
 
@@ -47,84 +84,120 @@ footer a {
     text-decoration: none;
     color: black;
     display: block;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     
+}
+
+.temoin-detail {
+    width: 40%;
 }
 
 
 
-
-
 /*FORMAT TABLETTE ET BUREAU*/
-@media (min-width: 566px) {
+@media (min-width: 768px) {
     
     nav {
         justify-content: space-between;
-        height: 80px;
         display: flex;
-        
+
+    }
+
+
+    h2.nous-rencontrer {
+        font-size: 36px;
+        font-weight: 800;
+    }
+
+    
+    .wpcf7-form-control-wrap input {
+        border: none;
+        height: 71px;
+        width: 383px;
+        border-radius: 7px;
+        margin-bottom: 25px;
     }
     
     
+    
+    
+    .wpcf7-form-control-wrap textarea {
+        border: none;
+        height: 237px;
+        width: 383px;
+        border-radius: 7px;
+        margin-bottom: 20px;
+    }
+    
+    input[type="submit"] {
+        background-color: #E0B9B4; 
+        color: white;
+        padding:15px;
+        border-radius: 7px;
+        width: 198px;
+        height: 55px;
+        border: none;
+        margin-left: 25%;
+    }
+
+
     img {
         width: 200px;
         margin-left: 30px;
         object-fit: contain;
     }
-    
+
     .menu-navigation-container {
         padding-top: 28px;
-        padding-left: 20px;
+
     }
-    
+
     .navigation ul {
         list-style: none;
         margin: 30px;
+        display: flex;
     }
-    
+
     .navigation li {
         display: inline;
-        margin: 15px;
-        
+        font-weight: 700;
+
+
     }
-    
+
     h1 {
-        color:#3B8E46;
+        color: #3B8E46;
         font-family: 'Syne', sans-serif;
         font-weight: 900;
         text-align: center;
         text-decoration: none;
         font-size: 38px;
-    
+
+
     }
+
     .navigation a {
         padding: 10px;
         color: black;
         font-size: 18px;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 700;
     }
 
-    #menu-item-10 a { /*COMMANDER */
+    #menu-item-10 a {
+        /*COMMANDER*/
         color: white;
         background-color: #DC9F96;
-        width: 100%;
-        
-        padding: 28px;
+        text-align: center;
+        padding: 30px 60px 31px 60px;
+        font-weight: 700;
     }
-    
+
     #menu-item-10 li {
-        color: white;
-        background-color: #DC9F96;
+        width: 236px;
 
     }
 
-    h2.entry-title  {
-        margin-top: 50px;
-        margin-left: 25%;
-    
-    }
-    
 }
 
 
@@ -153,7 +226,7 @@ footer a {
 
 /*TABLETTE ET MOBILE*/
 
-@media (max-width: 566px) {
+@media (max-width: 767px) {
 
 
     /*NAVBAR*/
@@ -199,32 +272,40 @@ footer a {
         background-color: #DC9F96;
     }
 
-
-    img {
-        margin-left: 20%;
+    p.presentation {
+        max-width: 100%;
+        text-align: center;
+        margin: 2em auto;
     }
+
+
     #menu-item-10 a {
         color: white;
         background-color: #DC9F96;
         align-items: center;
     }
 
-    #menu-item-10 li {
-        color: white;
-        background-color: #DC9F96;
+    img {
+        margin-left: 20%;
     }
+
+
 
     h1 {
         margin-top: 50px;
-        color:#3B8E46;
+        color: #3B8E46;
         font-family: 'Syne', sans-serif;
         font-weight: 900;
         text-align: center;
         text-decoration: none;
         font-size: 20px;
-    
+
     }
 
+    h2.nous-rencontrer {
+        font-size: 20px;
+        font-weight: 800;
+    }
 
 
     /*FOOTER*/
@@ -237,5 +318,36 @@ footer a {
         background-color: white;
         text-align: center;
         width: 100%;
+    }
+
+    .wpcf7-form-control-wrap input {
+        border: none;
+        height: 71px;
+        width: 283px;
+        border-radius: 7px;
+        margin-bottom: 25px;
+    }
+    
+    
+    
+    
+    .wpcf7-form-control-wrap textarea {
+        border: none;
+        height: 237px;
+        width: 283px;
+        border-radius: 7px;
+        margin-bottom: 10px;
+    }
+    
+    input[type="submit"] {
+        background-color: #E0B9B4; 
+        color: white;
+        padding:15px;
+        border-radius: 7px;
+        width: 198px;
+        height: 55px;
+        border: none;
+        margin-left: 15%;
+        margin-bottom: 50px;
     }
 }
