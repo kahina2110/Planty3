@@ -6,11 +6,14 @@
 body {
     line-height: normal;
     font-family: 'Syne', sans-serif;
+    min-height: 100vh;
 }
 
 #container {
     background-color: #E2DAD4;
     max-width: 100%;
+    flex: 1;
+    min-height: 100vh;
 
 }
 
@@ -26,25 +29,6 @@ nav {
     justify-content: space-between;
     height: 80px;
 
-}
-
-
-footer {
-    width: 100%;
-    font-family: 'Syne', sans-serif;
-    bottom: 0;
-}
-
-img.canette {
-    width: 1489px;
-}
-
-
-#footer {
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
 }
 
 p.presentation {
@@ -69,28 +53,97 @@ h1.has-background {
     padding: 0;
     width: 300px;
 }
+
 h2.has-background {
     padding: 0;
 }
 
+
+
 h4.has-background {
     padding: 2;
 }
+h1.commander {
+    width: 100%;
+}
+form.wpcf7-form.init {
+
+ color: white;
+ margin: 0 auto; 
+
+}
+.temoin-detail {
+    width: 40%;
+}
 
 
+.quantity a {
+    border-radius: 10px 0 0 10px;
+}
 
+.plus a {
+    border-radius: 0 10px 10px 0;
+
+}
+
+footer {
+    width: 100%;
+    font-family: 'Syne', sans-serif;
+    bottom: 0;
+}
 
 footer a {
     text-decoration: none;
     color: black;
-    display: block;
-    margin-bottom: 10px;
+    
     
 }
 
-.temoin-detail {
-    width: 40%;
+#footer {
+    padding-top: 25px;
+    background-color: white;
+    height: 80px;
+    text-align: center;
+    width: 100%;
 }
+
+.contacts {
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -100,16 +153,19 @@ footer a {
     nav {
         justify-content: space-between;
         display: flex;
-
+        
     }
-
+    .contacts {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
 
     h2.nous-rencontrer {
         font-size: 36px;
         font-weight: 800;
     }
 
-    
     .wpcf7-form-control-wrap input {
         border: none;
         height: 71px;
@@ -117,10 +173,7 @@ footer a {
         border-radius: 7px;
         margin-bottom: 25px;
     }
-    
-    
-    
-    
+
     .wpcf7-form-control-wrap textarea {
         border: none;
         height: 237px;
@@ -128,11 +181,11 @@ footer a {
         border-radius: 7px;
         margin-bottom: 20px;
     }
-    
+
     input[type="submit"] {
-        background-color: #E0B9B4; 
+        background-color: #E0B9B4;
         color: white;
-        padding:15px;
+        padding: 15px;
         border-radius: 7px;
         width: 198px;
         height: 55px;
@@ -289,8 +342,6 @@ footer a {
         margin-left: 20%;
     }
 
-
-
     h1 {
         margin-top: 50px;
         color: #3B8E46;
@@ -302,23 +353,13 @@ footer a {
 
     }
 
+   
     h2.nous-rencontrer {
         font-size: 20px;
         font-weight: 800;
     }
 
 
-    /*FOOTER*/
-    footer {
-        bottom: 0;
-        position: fixed;
-    }
-
-    #footer {
-        background-color: white;
-        text-align: center;
-        width: 100%;
-    }
 
     .wpcf7-form-control-wrap input {
         border: none;
@@ -327,10 +368,7 @@ footer a {
         border-radius: 7px;
         margin-bottom: 25px;
     }
-    
-    
-    
-    
+
     .wpcf7-form-control-wrap textarea {
         border: none;
         height: 237px;
@@ -338,16 +376,29 @@ footer a {
         border-radius: 7px;
         margin-bottom: 10px;
     }
-    
+
     input[type="submit"] {
-        background-color: #E0B9B4; 
+        background-color: #E0B9B4;
         color: white;
-        padding:15px;
+        padding: 15px;
         border-radius: 7px;
         width: 198px;
         height: 55px;
         border: none;
         margin-left: 15%;
-        margin-bottom: 50px;
+      
     }
+}
+
+.form-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+.form-contact label {
+    color: black;
+
 }
