@@ -21,3 +21,6 @@ add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
       register_nav_menu('footer', 'En bas de page ');
     }
     add_action('after_setup_theme','montheme_support');
+
+
+  

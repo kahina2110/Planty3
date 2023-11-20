@@ -9,8 +9,9 @@ body {
     min-height: 100vh;
 }
 
+
 #container {
-    background-color: #E2DAD4;
+
     max-width: 100%;
     flex: 1;
     min-height: 100vh;
@@ -58,7 +59,9 @@ h2.has-background {
     padding: 0;
 }
 
-
+#wpcf7-f237-p6-o1 {
+    margin: auto;
+}
 
 h4.has-background {
     padding: 2;
@@ -66,25 +69,45 @@ h4.has-background {
 h1.commander {
     width: 100%;
 }
-form.wpcf7-form.init {
 
- color: white;
- margin: 0 auto; 
-
-}
-.temoin-detail {
-    width: 40%;
+p.has-background-quantity {
+    width: 39px;
+    padding: 30px;
 }
 
 
-.quantity a {
-    border-radius: 10px 0 0 10px;
+
+
+.temoins img {
+    width: 129px
 }
 
-.plus a {
-    border-radius: 0 10px 10px 0;
-
+h2.panier {
+    height: 56px;
+    padding-top: 15px;
 }
+
+
+
+
+.accueil {
+    background-image: url('assets/Group 4.png');
+}
+
+.canette figure {
+    width: 100%;
+}
+
+.quantity  {
+   width: 29px;
+   height: 56px;
+   font-family: 'Inter' sans-serif ;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+}
+
+
 
 footer {
     width: 100%;
@@ -107,8 +130,13 @@ footer a {
     width: 100%;
 }
 
-.contacts {
-    flex-wrap: wrap;
+
+
+.is-style-fill a  {
+   height: 55px;
+   width: 198px;
+   text-align: center;
+  padding-top: 20px;
 }
 
 
@@ -143,8 +171,9 @@ footer a {
 
 
 
-
-
+.accueil img {
+    margin-left:  0px;
+}
 
 
 /*FORMAT TABLETTE ET BUREAU*/
@@ -155,12 +184,12 @@ footer a {
         display: flex;
         
     }
-    .contacts {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
 
+   
+    .canette img {
+        width: 100%;
+        margin-left: 0px;
+    }
     h2.nous-rencontrer {
         font-size: 36px;
         font-weight: 800;
@@ -172,6 +201,9 @@ footer a {
         width: 383px;
         border-radius: 7px;
         margin-bottom: 25px;
+    }
+    .panier img {
+      width: 180px;
     }
 
     .wpcf7-form-control-wrap textarea {
@@ -190,11 +222,11 @@ footer a {
         width: 198px;
         height: 55px;
         border: none;
-        margin-left: 25%;
+        margin: auto;
+      
     }
-
-
-    img {
+ 
+    nav img {
         width: 200px;
         margin-left: 30px;
         object-fit: contain;
@@ -246,10 +278,16 @@ footer a {
         font-weight: 700;
     }
 
+
+    #menu-item-9 a {
+       margin-right: 200px;
+
+    }
     #menu-item-10 li {
         width: 236px;
 
     }
+
 
 }
 
@@ -295,6 +333,13 @@ footer a {
 
         width: 100%;
 
+    }
+    .panier img {
+        width: 180px;
+      }
+    .canette img {
+        width: 100%;
+        margin-left: 0px;
     }
 
     .navigation {
@@ -385,18 +430,19 @@ footer a {
         width: 198px;
         height: 55px;
         border: none;
-        margin-left: 15%;
+      
       
     }
-}
 
-.form-contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-
-}
+  
+    
+  
+    }
+    #wpcf7-f237-p8-o1 form {
+        margin:  auto;
+    }
+    
+   
 
 .form-contact label {
     color: black;
