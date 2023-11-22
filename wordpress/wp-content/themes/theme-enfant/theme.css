@@ -24,7 +24,7 @@ body {
 .infos {
     display: inline;
 }
-#site-title {
+#site-title, #menu-item-1060 {
     display: none;
 }
 
@@ -127,6 +127,9 @@ form label {
     color: white;
 }
 
+.form-contact label {
+    color: black;
+}
 
 
 form input, input[type="text"] {
@@ -223,8 +226,6 @@ footer a {
 
 
 
-
-
 .accueil img {
     margin-left:  0px;
 }
@@ -256,7 +257,7 @@ footer a {
     }
 
   
-
+   
    
  
     nav img {
@@ -293,6 +294,16 @@ footer a {
 
 
     }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row-reverse; /* Inversion de l'ordre des éléments */
+        align-items: center; /* Pour centrer les éléments verticalement si nécessaire */
+      }
+    
+
 
     .navigation a {
         padding: 10px;

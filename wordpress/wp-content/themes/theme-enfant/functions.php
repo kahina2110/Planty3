@@ -26,8 +26,9 @@ add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
 
     function add_extra_item_to_nav_menu( $items, $args ) {
       if (is_user_logged_in()) {
-        $items .= '<li><a href="#">admin</a></li>';
+        $items .= '<li><a href="http://localhost:8888/Planty3/wordpress/wp-admin/index.php">Admin</a></li>';
       }
       return $items;
     }
     add_filter( 'wp_nav_menu_items', 'add_extra_item_to_nav_menu', 10, 2 );
+
