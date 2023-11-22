@@ -15,9 +15,15 @@ body {
     max-width: 100%;
     flex: 1;
     min-height: 100vh;
+    justify-content: center;
+  
 
 }
 
+
+.infos {
+    display: inline;
+}
 #site-title {
     display: none;
 }
@@ -59,10 +65,6 @@ h2.has-background {
     padding: 0;
 }
 
-#wpcf7-f237-p6-o1 {
-    margin: auto;
-}
-
 h4.has-background {
     padding: 2;
 }
@@ -75,9 +77,6 @@ p.has-background-quantity {
     padding: 30px;
 }
 
-
-
-
 .temoins img {
     width: 129px
 }
@@ -86,9 +85,6 @@ h2.panier {
     height: 56px;
     padding-top: 15px;
 }
-
-
-
 
 .accueil {
     background-image: url('assets/Group 4.png');
@@ -107,6 +103,64 @@ h2.panier {
    margin: 0;
 }
 
+
+.infos {
+    justify-content: space-between;
+}
+.form-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-delivery form {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.form-delivery form {
+    justify-content: center;
+    align-items: center;
+}
+
+form label {
+    color: white;
+}
+
+
+
+form input, input[type="text"] {
+    border: none;
+    height: 71px;
+    width: 383px;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+form textarea {
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+    width: 383px;    
+}
+
+.form-delivery .col-left {
+    flex: 1;
+    margin-right: 50px; 
+}
+
+input[type="submit"] {
+    background-color: #E0B9B4;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 7px;
+
+    height: 55px;
+    text-align: center;
+
+}
 
 
 footer {
@@ -177,13 +231,14 @@ footer a {
 
 
 /*FORMAT TABLETTE ET BUREAU*/
-@media (min-width: 768px) {
+@media (min-width: 769px){
     
     nav {
         justify-content: space-between;
         display: flex;
         
     }
+
 
    
     .canette img {
@@ -195,36 +250,14 @@ footer a {
         font-weight: 800;
     }
 
-    .wpcf7-form-control-wrap input {
-        border: none;
-        height: 71px;
-        width: 383px;
-        border-radius: 7px;
-        margin-bottom: 25px;
-    }
+
     .panier img {
       width: 180px;
     }
 
-    .wpcf7-form-control-wrap textarea {
-        border: none;
-        height: 237px;
-        width: 383px;
-        border-radius: 7px;
-        margin-bottom: 20px;
-    }
+  
 
-    input[type="submit"] {
-        background-color: #E0B9B4;
-        color: white;
-        padding: 15px;
-        border-radius: 7px;
-        width: 198px;
-        height: 55px;
-        border: none;
-        margin: auto;
-      
-    }
+   
  
     nav img {
         width: 200px;
@@ -288,6 +321,66 @@ footer a {
 
     }
 
+    .form-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form input, input[type="text"] {
+        border: none;
+        height: 71px;
+        width: 383px;
+        border-radius: 7px;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+    .form-delivery .col-left {
+        flex: 1;
+        margin-right: 10px; 
+    }
+    
+    form textarea {
+        border: none;
+        border-radius: 7px;
+        margin-top: 10px;
+        width: 383px;    
+    }
+    
+    input[type="submit"] {
+        background-color: #E0B9B4;
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        border-radius: 7px;
+   
+        height: 55px;
+        text-align: center;
+    
+    }
+
+
+.form-delivery form input {
+    margin-right: 100px;
+}
+
+
+ .form-delivery .col-left {
+    flex: 1;
+    margin-right: 50px; 
+}
+
+.wpcf7-form .form-delivery input[type="text"] {
+    margin-bottom: 10px; 
+}
+form.wpcf7-form .form-delivery .col-right {
+    flex: 1;
+}
+
+form.wpcf7-form .form-delivery .wpcf7-submit {
+    width: 100%; 
+ margin: 20px auto;
+}
 
 }
 
@@ -317,7 +410,7 @@ footer a {
 
 /*TABLETTE ET MOBILE*/
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
 
     /*NAVBAR*/
@@ -397,54 +490,56 @@ footer a {
         font-size: 20px;
 
     }
-
-   
+    .panier h2 {
+        text-align: center;
+    }
     h2.nous-rencontrer {
         font-size: 20px;
         font-weight: 800;
     }
+    .infos {
+        justify-content: space-between;
+    }
+    .form-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-
-
-    .wpcf7-form-control-wrap input {
+    form input, input[type="text"] {
         border: none;
         height: 71px;
-        width: 283px;
+       width: 283px;
         border-radius: 7px;
         margin-bottom: 25px;
+        margin-top: 10px;
     }
-
-    .wpcf7-form-control-wrap textarea {
+    
+    form textarea {
         border: none;
-        height: 237px;
-        width: 283px;
         border-radius: 7px;
-        margin-bottom: 10px;
-    }
+        width: 283px;
 
+        max-width: 100%;   
+    }
+    
     input[type="submit"] {
         background-color: #E0B9B4;
         color: white;
-        padding: 15px;
+        font-size: 15px;
+        font-weight: 400;
         border-radius: 7px;
-        width: 198px;
+
         height: 55px;
-        border: none;
-      
-      
-    }
-
-  
-    
-  
-    }
-    #wpcf7-f237-p8-o1 form {
-        margin:  auto;
-    }
-    
+        text-align: center;
    
+     
+    }
 
-.form-contact label {
-    color: black;
 
-}
+ 
+    
+  
+    }
+  
+   
