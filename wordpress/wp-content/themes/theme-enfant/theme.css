@@ -140,13 +140,46 @@ input[type="text"] {
     margin-top: 10px;
 }
 
+
+.form-delivery form {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.form-delivery form {
+    justify-content: center;
+    align-items: center;
+}
+
+form label {
+    color: white;
+}
+
+.form-contact label {
+    color: black;
+}
+
+
+form input, input[type="text"] {
+    border: none;
+    height: 71px;
+    width: 383px;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
 form textarea {
     border: none;
     border-radius: 7px;
     margin-top: 10px;
-    width: 383px;
+    width: 383px;    
 }
 
+.form-delivery .col-left {
+    flex: 1;
+    margin-right: 50px; 
+}
 
 input[type="submit"] {
     background-color: #E0B9B4;
@@ -159,6 +192,10 @@ input[type="submit"] {
     text-align: center;
 
 }
+
+
+
+
 
 
 footer {
@@ -338,6 +375,16 @@ footer a {
         align-items: center;
     }
 
+    .wpcf7-form-control.wpcf7-submit.has-spinner.bouton {
+        width: 198px;
+    margin: 0 auto;
+display: block;    }
+
+.wpcf7-form-control.wpcf7-submit.has-spinner.commande {
+    width: 198px;
+    
+}
+
     form input,
     input[type="text"] {
         border: none;
@@ -349,6 +396,17 @@ footer a {
     }
 
    
+input[type="submit"] {
+    background-color: #E0B9B4;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 7px;
+    height: 55px;
+    text-align: center;
+}
+
+
 
     .personnel {
         background-image: url('../../../../assets/Group\ 4.png');
@@ -381,23 +439,24 @@ footer a {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         margin-left: 14%;
         width: 70%;
     }
-    .form-delivery form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-   
-    
     .form-delivery {
         flex: 1;
     }
-    
+    div.submit {
+        flex: 1;
+  
+display: flex;
+justify-content: center;
+        text-align: center;
+    }
+
+
     .colonne1 {
-        border-left: solid 3px white;
+        border-left: solid 1px white;
         margin-left: 60px;
         padding-left: 60px;
     }
@@ -439,25 +498,141 @@ footer a {
 /*TABLETTE*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    nav {
+        justify-content: space-between;
+        display: flex;
+
+    }
+
+
+
+    .canette img {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    h2.nous-rencontrer {
+        font-size: 36px;
+        font-weight: 800;
+    }
+
+
+    .panier img {
+        width: 180px;
+    }
+
+
+
+
+
+    nav img {
+        width: 200px;
+        margin-left: 30px;
+        object-fit: contain;
+    }
+
+    .menu-navigation-container {
+        padding-top: 28px;
+
+    }
+
+    .navigation ul {
+        list-style: none;
+        margin: 30px;
+        display: flex;
+    }
+
+    .navigation li {
+        display: inline;
+        font-weight: 700;
+
+
+    }
+
+    h1 {
+        color: #3B8E46;
+        font-family: 'Syne', sans-serif;
+        font-weight: 900;
+        text-align: center;
+        text-decoration: none;
+        font-size: 38px;
+
+
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        /* Inversion de l'ordre des éléments */
+        align-items: center;
+        /* Pour centrer les éléments verticalement si nécessaire */
+    }
+
+
+
+    .navigation a {
+        padding: 10px;
+        color: black;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    #menu-item-10 a {
+        /*COMMANDER*/
+        color: white;
+        background-color: #DC9F96;
+        text-align: center;
+        padding: 30px 60px 31px 60px;
+        font-weight: 700;
+    }
+
+
+    #menu-item-9 a {
+        margin-right: 200px;
+
+    }
+
+    #menu-item-10 li {
+        width: 236px;
+
+    }
     .infos-livraison {
         display: inline;
+
     }
 
     .infos-livraison h2 {
         margin-right: 20px;
+        display: inline;
+    }
+    
+    .infos  {
+        font-size: 15px;
+        display: inline;
+
     }
     
     .wp-block-column-add-is-layout-flow-wp-block-column-is-layout-flow {
         flex-basis: 15%;
     }
+
+
     .form-delivery form {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 70% ;
-        margin-left: 14%;
+       flex-direction: column;
+    
 
+    }
+
+    .wpcf7-form-control.wpcf7-submit.has-spinner.commande {
+        margin: 0 auto;
+        display: block;
+        width: 190px;
     }
    
    
@@ -476,6 +651,29 @@ footer a {
         margin-bottom: 25px;
         margin-top: 10px;
     }
+
+
+input[type="submit"] {
+    background-color: #E0B9B4;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 7px;
+    height: 55px;
+    text-align: center;
+  
+
+}
+
+
+
+
+ textarea {
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+    width: 383px;
+}
 
 }
 
@@ -579,7 +777,19 @@ footer a {
 
     .infos {
         justify-content: space-between;
+        width: 350px;
     }
+
+    .infos-livraison {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .infos-livraison h2 {
+        margin-right: 20px;
+    }
+    
+ 
 
     .form-contact {
         display: flex;
