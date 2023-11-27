@@ -668,7 +668,7 @@ input[type="submit"] {
 
 
 
- textarea {
+ form textarea {
     border: none;
     border-radius: 7px;
     margin-top: 10px;
