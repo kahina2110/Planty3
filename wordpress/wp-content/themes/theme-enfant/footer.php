@@ -1,9 +1,23 @@
-</main>
-<?php get_sidebar(); ?>
-</div>
-<footer id="footer" role="contentinfo">
-<div class="menu-mentions-container"><ul id="menu-mentions" class="mentions"><li id="menu-item-527" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-527"><a href="http://localhost:8888/Planty3/wordpress/politique-de-confidentialite/" itemprop="url">Mentions légales</a></li>
+<?php
+/**
+ * Le fichier de modèle pour l'en-tête du site.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package NomDuTheme
+ */
+
+?>
+    <footer id="footer" role="contentinfo">
+       <ul>
+       <a rel="privacy-policy" href="http://localhost:8888/Planty3/wordpress/politique-de-confidentialite/" itemprop="url">Mentions légales</a>
+       </ul>
+    </footer>
+
+    <?php
+    echo '</div>';
+
+    wp_footer();
+    ?>
 </body>
-</footer>
-</div>
 </html>
